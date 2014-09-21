@@ -35,3 +35,11 @@ cacheSolve <- function(x, ...) {
   x$setminverse(minv)
   minv
 }
+
+## This is an example:
+
+x <- matrix(c(1,3,2,4),nrow=2,ncol=2)
+minvx<-makeCacheMatrix(x)
+cacheSolve(minvx)
+cacheSolve(minvx)
+
